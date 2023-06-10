@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Roboto', sans-serif;*/
+    
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)), url(images/background.jpg);
+    background-position: center;
+    background-size: cover; 
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.container2 {
+  
+  width: 100%;
+    height: 100vh;
+    background-color:linear-gradient(rgba(0,0,0,0.7),rgba(51, 51, 51, 0.7));
+    background-position: center;
+    background-size: cover; 
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}  
+nav{
+    flex:1;
+    text-align: center;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left:60px;
+}
+nav ul li a 
+{
+    text-decoration:none;
+    color: #fff;
+    font-size: 10px;
+}
+  
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(51, 51, 51, 0.7);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover,
+.navbar a.link1:hover,
+.navbar a.link2:hover,
+.navbar a.link3:hover,
+.navbar a.link4:hover,
+.navbar a.link5:hover,
+.navbar a.link6:hover,
+.navbar a.link7:hover,
+.navbar a.link8:hover,
+.navbar a.link9:hover,
+.navbar a.link10:hover,
+.navbar a.link11:hover,
+.navbar a.link12:hover {
+    color: #4CAF50; 
+}
+
+  header,footer{
+  
+    padding:5px;
+    color: #fff;
+    background-color: #45a049;
+    clear: left;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+    
+  
+    .navbar {
+      width: auto;
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+      justify-content: space-between;
+      
+    }
+  
+    nav {
+      text-align: left;
+      width: auto;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      margin-right: 10px;
+      width: auto;
+    }
+  
+    nav ul li {
+      width: auto;
+      list-style:none;
+     text-align: center;
+      margin-left: 10px;
+    }
+  
+    .dropdown {
+      position: relative;
+  }
+
+  .dropdown-content {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      background-color: rgba(0, 0, 0, 0.7);
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+  .dropdown-content a img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+    video {
+      width: 100%;
+      height: auto;
+    }
+    footer{
+      display:none;
+    }
+  }
+  /*bunun üstü media */
+  .logo {
+    background-image: url('images/minecraftlogo.ico');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+
+
+

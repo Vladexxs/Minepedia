@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MINEPEDIA</title>
+<link rel="icon" type="image/x-icon" href="images/minecraftlogo.ico">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+html body{
+  background-color: black;
+}
+.row{
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+.col{
+ flex-basis:50%;
+
+    }
+h1{
+    color:#fff;
+    font-size:60px;
+}    
+p{
+    color:#fff;
+    font-size:11px;
+    line-height:15px;
+}
+.custom-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    margin-top:20px;
+  }
+  .custom-button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .custom-button:hover {
+    background-color: #45a049;
+  }
+  .card
+  {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius:10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin:10px 15px;
+    background-position: center;
+    background-size:cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(images/build.png);
+}
+.card2{
+    background-image: url(images/redstone.jpeg);
+} 
+.card3{
+    background-image: url(images/fantasycoasttavern.jpg);
+}
+.card4{
+    background-image: url(images/rollercoster.jpg);
+}
+.card:hover{
+    transform:translateY(-10px);
+}
+h5{
+    color:#fff;
+    text-shadow: 0 0 5px #45a049;
+}
+.card p{
+  text-shadow: 0 0 15px #000;
+  font-size: 8px;
+}
+/* media screen */
+@media screen and (max-width: 768px) {
+  
+ 
+  .row {
+    flex-direction: column;
+  }
+
+  .col {
+    flex-basis: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin: 10px 0;
+    margin-left:auto;
+    margin-right: auto;
+    float:none;
+  }
+
+  
+}
+/*bunun üstü media */
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <nav>
+          <ul>
+            <li><a href="default.html" class="link1">HOME</a></li>
+            <li><a href="newsandevents.html" class="link2">NEWS AND EVENTS</a></li>
+            <li><a href="patchnotes.html" class="link3">UPDATES</a></li>
+            <li class="dropdown">
+              <a href="ideasandguides.html">IDEAS AND GUIDES &#9662;</a>
+              <div class="dropdown-content">
+                <a href="redstone.html" class="link4">Redstone Ideas</a>
+                <a href="building.html" class="link5">Build Ideas</a>
+                <a href="modpacking.html" class="link6">Mod Packing Ideas</a>
+                <a href="brewing.html" class="link7">Brewing Guides</a>
+                <a href="enchanting.html" class="link8">Enchanting Guide</a>
+                <a href="farms.html" class="link9">Farm Guides</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="community.html" class="link10">COMMUNITY &#9662;</a>
+              <div class="dropdown-content">
+                <a href="https://www.youtube.com/Minecraft" target="_blank">
+                  <img src="images/youtube.png" alt="YouTube" width="16" height="16">
+                  Youtube
+                </a>
+                <a href="https://www.instagram.com/minecraft/" target="_blank">
+                  <img src="images/logo-ig-png-32464.png" alt="Instagram" width="16" height="16">
+                  Instagram
+                </a>
+                <a href="https://twitter.com/Minecraft" target="_blank">
+                  <img src="images/logo-twitter-png-5860.png" alt="Twitter" width="16" height="16">
+                  Twitter
+                </a>
+              </div>
+            </li>
+            <li><a href="history.html" class="link11">HISTORY</a></li>
+            <li><a href="contact.html" class="link12">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+<div class="row">
+    <div class="col">
+     <h1>THE TRAILS & TALES UPDATE</h1>
+    <p>In Swedish, there is a saying that translates to “a beloved child has many names”. I like this expression because I am a self-proclaimed maximalist.  </p>
+    <button class="custom-button"><a href="patchnotes.html">Read More</a></button>
+
+</div>
+<div class="col">
+    <a href="building.html"> 
+   <div class="card card1">
+    <h5>BUILDING</h5>
+    <p>Read More</p>
+    </div></a>
+  
+
+   <a href ="redstone.html">
+   <div class="card card2">
+    <h5>REDSTONE</h5>
+    <p>Read More</p>
+   </div></a>
+
+   <a href ="modpacking.html">
+   <div class="card card3">
+    <h5>MOD PACKING</h5>
+    <p>Read More</p>
+   </div></a>
+
+   <a href ="farms.html">
+   <div class="card card4">
+    <h5>FARMS</h5>
+    <p>Read More</p>
+   </div></a>
+
+</div>
+</div>
+
+
+<footer><p>&copy; 2023 MINEPEDIA. All rights reserved.</p></footer>
+</body>
+</html>
